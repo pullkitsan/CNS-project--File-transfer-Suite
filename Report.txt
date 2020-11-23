@@ -1,0 +1,18 @@
+Steps for executing the program 
+-> use the make all command against the provided source code as separate makefiles were created for grec and gsend
+
+-> use ./grec PORT to execute the receiver part which will be then waiting for incoming connections 
+open a new terminal window and and use ./gsend 127.0.0.1 PORT to listen on the same port. The destination IP varies  ,but I used 127.0.0.1 as both sender and receivers were present on the same network..
+
+->Now SHA-512 of the test file was found to be : D7229C7C46D087491C2D056B7185B9B7B0508DF6D120464E0E0B4BA0E9CF71DAB4C5154AC1C8065F8CB0EF2A02ADC6AC99D4DDA2B7254BAD7C763D4C942EE5A7
+
+
+->After using with the password:"hello" the hexadecimal value of key was found to be  
+HEX=be 15 8f a0 88 b3 ce fe f7 dd f1 b1 20 ef 59 94 40 b3 1d fd 15 ec fd 48 e4 80 4b e3 9b a1 0d 
+
+
+->SHA-512 of the encrypted file was found to be 
+261aa9cadc619fd1cec21857e1132ela999b739732e1d6ed1f773929faac73acf1dcaa7b03404cd87b4cb61181599ac6a43aba0deafff0483c1c149d4edf919b9
+ 
+Now, I was successfully able to send the file from sender to receiver . However , unable to find the HMAC of the encrypted file.  
+
